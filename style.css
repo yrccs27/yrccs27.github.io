@@ -7,14 +7,14 @@
   --orange-soft:#fde5dc; --amber-soft:#fdeccc; --moss-soft:#dcefe5;
   --faint:#cfc8c1;
   --sky-soft:#dcebf8;
-  --ovgu-panel:#1d1d1b; --ovgu-text:#ffffff; --ovgu-disc:#ffffff;
+  --ovgu-panel:url(#ovgu-grad); --ovgu-text:#ffffff; --ovgu-disc:#ffffff;
   --f-display:"STIX Two Text", "STIX Two", Cambria, Georgia, serif;
   --f-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
   --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 /* Dark colours, used when the visitor clicks the Dark mode button */
 :root[data-theme="dark"]{
-  --ovgu-panel:#1d1d1b; --ovgu-text:#f1ece6; --ovgu-disc:#f1ece6;
+  --ovgu-panel:url(#ovgu-grad); --ovgu-text:#f1ece6; --ovgu-disc:#f1ece6;
   --sky-soft:#1c3247;
   --paper:#161412; --surface:#211e1b; --ink:#f1ece6; --muted:#a9a19a; --rule:#3a3430;
   --orange:#f2683a; --orange-text:#ff8a5c; --amber:#f7a733; --moss:#6fcf9f;
