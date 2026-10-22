@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- YRCCS 2027 website. Edit the text between the tags; look for "EDIT:" comments.
+     Colours and fonts for all pages are in style.css. -->
+<title>Programme · YRCCS 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html">YRCCS 2027</a>
+    <div class="bar-right">
+    <nav aria-label="Sections">
+      <a href="index.html">About</a>
+      <a href="minicourses.html">Minicourses</a>
+      <a href="programme.html" aria-current="page">Programme</a>
+      <a href="venue.html">Venue</a>
+      <a href="registration.html">Registration</a>
+    </nav>
+    <button type="button" class="theme-btn" id="theme-btn" aria-pressed="false">Dark mode</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">YRCCS 2027 · 31 May – 4 June 2027 · Magdeburg</p>
+    <h1>Programme</h1>
+  </div>
+</div>
+
+<!-- EDIT: Programme table. Each <tr> is a half hour (9:00, 9:30, ...). Cells go Monday to Friday;
+     rowspan="3" makes a cell last three half hours (90 minutes). Classes: "mc mc1/mc2/mc3" colour the minicourses,
+     "quiet" is for breaks, "pending" for things not yet confirmed. -->
+<section id="programme">
+  <div class="wrap">
+    <div class="label">Programme</div>
+    <div>
+      <h2>Week at a glance</h2>
+      <p class="prose">The conference opens with registration at 9:00 on Monday and ends with lunch on Friday. The week includes 11 contributed talks, poster sessions and an afternoon hike.</p>
+      <div class="scroll" tabindex="0" aria-label="Schedule table, scrolls sideways on small screens">
+        <table>
+          <thead>
+            <tr><th scope="col"></th>
+              <th scope="col">Monday<small>31 May</small></th>
+              <th scope="col">Tuesday<small>1 June</small></th>
+              <th scope="col">Wednesday<small>2 June</small></th>
+              <th scope="col">Thursday<small>3 June</small></th>
+              <th scope="col">Friday<small>4 June</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="t">9:00</td><td>Registration + welcome</td><td class="mc mc1" rowspan="3">Minicourse 1</td><td rowspan="2"></td><td class="mc mc3" rowspan="3">Minicourse 3</td><td class="mc mc3" rowspan="3">Minicourse 3</td></tr>
+            <tr><td class="t">9:30</td><td class="mc mc1" rowspan="3">Minicourse 1</td></tr>
+            <tr><td class="t">10:00</td><td class="mc mc1" rowspan="3">Minicourse 1</td></tr>
+            <tr><td class="t">10:30</td><td class="quiet">Coffee</td><td class="quiet">Coffee</td><td class="quiet">Coffee</td></tr>
+            <tr><td class="t">11:00</td><td class="quiet">Coffee</td><td class="mc mc2" rowspan="3">Minicourse 2</td><td class="mc mc2" rowspan="3">Minicourse 2</td><td class="mc mc3" rowspan="3">Minicourse 3</td></tr>
+            <tr><td class="t">11:30</td><td>Talk 1</td><td class="quiet">Coffee</td></tr>
+            <tr><td class="t">12:00</td><td>Talk 2</td><td>Talk 7</td></tr>
+            <tr><td class="t">12:30</td><td class="quiet" rowspan="2">Lunch</td><td class="quiet" rowspan="2">Lunch</td><td class="quiet" rowspan="2">Lunch</td><td class="quiet" rowspan="2">Lunch</td><td class="quiet" rowspan="2">Lunch</td></tr>
+            <tr><td class="t">13:00</td></tr>
+            <tr><td class="t">13:30</td><td rowspan="3">Q&amp;A</td><td>Talk 3</td><td rowspan="3">Activity 2</td><td>Talk 8</td><td rowspan="11"></td></tr>
+            <tr><td class="t">14:00</td><td>Talk 4</td><td>Talk 9</td></tr>
+            <tr><td class="t">14:30</td><td class="quiet">Coffee</td><td class="quiet">Coffee</td></tr>
+            <tr><td class="t">15:00</td><td class="quiet">Coffee</td><td>Talk 5</td><td rowspan="5">Hike</td><td>Talk 10</td></tr>
+            <tr><td class="t">15:30</td><td class="mc mc2" rowspan="3">Minicourse 2</td><td>Talk 6</td><td>Talk 11</td></tr>
+            <tr><td class="t">16:00</td><td class="poster" rowspan="3">Poster session</td><td class="pending" rowspan="3">Poster session / talks (tbc)</td></tr>
+            <tr><td class="t">16:30</td></tr>
+            <tr><td class="t">17:00</td><td rowspan="4"></td></tr>
+            <tr><td class="t">17:30</td><td rowspan="3"></td><td rowspan="3"></td><td rowspan="2"></td></tr>
+            <tr><td class="t">18:00</td></tr>
+            <tr><td class="t">18:30</td><td class="pending">Barbecue (tbc)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">The programme is preliminary and may change.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDIT: Activities. One <li> per activity. -->
+<section id="activities">
+  <div class="wrap">
+    <div class="label">Activities</div>
+    <div>
+      <h2>Beyond the research talks</h2>
+      <p class="prose">One or two afternoon slots are set aside for sessions on careers and well-being. Planned ideas include:</p>
+      <ul class="list">
+        <li>A question-and-answer session where PhD students ask postdocs about the next career step</li>
+        <li>A workshop on mental health and work-life balance</li>
+        <li>Preparing for interviews and writing postdoc applications</li>
+        <li>AI tools for young researchers</li>
+        <li>A panel on giving good talks</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- EDIT: Footer -->
+<footer>
+  <div class="wrap">
+    <span>Supported by the DFG Priority Programme SPP 2458 “Combinatorial Synergies”.</span>
+    <span>Hosted at Otto von Guericke University Magdeburg.</span>
+  </div>
+</footer>
+
+<script src="theme.js"></script>
+</body>
+</html>

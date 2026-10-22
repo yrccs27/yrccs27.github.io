@@ -1,0 +1,119 @@
+/* Shared styles for every page of the YRCCS 2027 website. */
+/* EDIT: colours and fonts are set here (light colours first, then the dark colours used by the Dark mode button). */
+/* Layout: a paper-like page; each section has a narrow margin label on the left and content on the right. Hero pairs the title with the programme logo. */
+:root{
+  --paper:#f8f7f5; --surface:#ffffff; --ink:#1d1d1b; --muted:#5f5b57; --rule:#e4dfda;
+  --orange:#e94e1b; --orange-text:#b8380e; --amber:#f39200; --moss:#2f7d5b;
+  --orange-soft:#fde5dc; --amber-soft:#fdeccc; --moss-soft:#dcefe5;
+  --faint:#cfc8c1;
+  --sky-soft:#dcebf8;
+  --f-display:"STIX Two Text", "STIX Two", Cambria, Georgia, serif;
+  --f-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+/* Dark colours, used when the visitor clicks the Dark mode button */
+:root[data-theme="dark"]{
+  --sky-soft:#1c3247;
+  --paper:#161412; --surface:#211e1b; --ink:#f1ece6; --muted:#a9a19a; --rule:#3a3430;
+  --orange:#f2683a; --orange-text:#ff8a5c; --amber:#f7a733; --moss:#6fcf9f;
+  --orange-soft:#3d2116; --amber-soft:#3a2a10; --moss-soft:#163628;
+  --faint:#4a433d; color-scheme:dark;
+}
+.theme-btn{font:inherit;font-size:.85rem;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:999px;padding:.3rem .8rem;cursor:pointer}
+.theme-btn:hover{border-color:var(--muted)}
+.theme-btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.bar-right{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem 1.25rem}
+*{box-sizing:border-box}
+/* EDIT: overall text size. 100% is the browser default; raise or lower to scale all text. */
+html{font-size:112.5%}
+body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1.0625rem;line-height:1.6}
+a{color:var(--orange-text);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-radius:2px}
+.wrap{max-width:68rem;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+
+/* top bar */
+.bar{border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;padding-block:.9rem}
+.mark{font-family:var(--f-mono);font-weight:500;letter-spacing:.06em;font-size:.85rem}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.1rem}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:2.5rem;align-items:center;padding-block:3.5rem 3rem}
+.eyebrow{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 1rem}
+h1{font-family:var(--f-display);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08;margin:0 0 1.25rem;text-wrap:balance}
+h1 em{font-style:italic;color:var(--orange-text)}
+.organisers{font-family:var(--f-display);font-size:1.3rem;line-height:1.4;margin:0 0 1.5rem;padding-left:.9rem;border-left:3px solid var(--orange)}
+.organisers strong{font-weight:600}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:.35rem 1.25rem;margin:0;font-size:1.05rem}
+.facts dt{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:.2rem}
+.facts dd{margin:0}
+.figure{margin:0}
+.figure{display:flex;justify-content:center}
+.figure .logo{width:100%;max-width:26rem;height:auto;display:block}
+
+/* sections */
+section{border-top:1px solid var(--rule)}
+section .wrap{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:1rem 2.5rem;padding-block:3rem}
+.label{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:.45rem}
+h2{font-family:var(--f-display);font-weight:400;font-size:1.9rem;line-height:1.2;margin:0 0 1rem;text-wrap:balance}
+h3{font-family:var(--f-display);font-weight:600;font-size:1.2rem;margin:0 0 .35rem}
+.prose{max-width:40rem}
+.prose p{margin:0 0 1rem}
+
+/* minicourses */
+.courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.5rem}
+.course{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--c);padding:1.1rem 1.1rem 1.25rem;display:flex;flex-direction:column;gap:.4rem}
+.course .tag{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);letter-spacing:.05em}
+.course p{margin:0;color:var(--muted);font-size:.95rem}
+.c1{--c:var(--orange)} .c2{--c:var(--amber)} .c3{--c:var(--moss)}
+
+/* schedule */
+.scroll{overflow-x:auto;margin-top:1.25rem;border:1px solid var(--rule);background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:40rem;font-size:.92rem;table-layout:fixed}
+thead th:first-child{width:4.5rem}
+th,td{border-bottom:1px solid var(--rule);padding:.45rem .6rem;text-align:center;vertical-align:middle}
+thead th{font-family:var(--f-display);font-weight:600;font-size:1rem;border-bottom:2px solid var(--rule)}
+thead th small{display:block;font-family:var(--f-mono);font-weight:400;font-size:.72rem;color:var(--muted)}
+td.t{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.mc{font-weight:600}
+.poster{background:var(--sky-soft);color:var(--ink);font-weight:600}
+.mc1{background:var(--orange-soft);color:var(--ink)}
+.mc2{background:var(--amber-soft);color:var(--ink)}
+.mc3{background:var(--moss-soft);color:var(--ink)}
+.quiet{color:var(--muted)}
+.pending{color:var(--muted);font-style:italic}
+.note{font-size:.9rem;color:var(--muted);margin-top:.75rem}
+
+/* lists */
+.list{list-style:none;padding:0;margin:0;display:grid;gap:.75rem;max-width:40rem}
+.list li{display:grid;grid-template-columns:1.4rem minmax(0,1fr);gap:.5rem}
+.list li::before{content:"";width:.5rem;height:.5rem;margin-top:.6rem;border-radius:50%;background:var(--amber)}
+
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem}
+address{font-style:normal}
+.people{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.5rem 2rem;font-family:var(--f-display);font-size:1.25rem}
+
+footer{border-top:1px solid var(--rule)}
+footer .wrap{padding-block:2rem;font-size:.9rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between}
+
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:minmax(0,1fr);padding-block:2.25rem}
+  .figure{max-width:22rem}
+  section .wrap{grid-template-columns:minmax(0,1fr);padding-block:2.25rem}
+  .label{padding-top:0}
+  .courses,.cols{grid-template-columns:minmax(0,1fr)}
+}
+/* current page in the menu */
+nav a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:6px}
+.mark{color:var(--ink);text-decoration:none}
+/* page heading on inner pages */
+.page-head .wrap{padding-block:2.5rem 0}
+.page-head h1{font-size:clamp(2rem,4vw,2.8rem);margin:0}
+.page-head .eyebrow{margin-bottom:.6rem}
+.page-head + section{border-top:0}
+/* travel information on the venue page */
+.travel{margin-top:2.25rem;padding-top:1.75rem;border-top:1px solid var(--rule);max-width:44rem}
+.travel p{margin:0 0 .9rem}
