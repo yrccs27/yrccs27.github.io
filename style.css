@@ -51,7 +51,7 @@ h1 em{font-style:italic;color:var(--orange-text)}
 .facts dt{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:.2rem}
 .facts dd{margin:0}
 .figure{margin:0}
-.figure{display:flex;justify-content:center}
+.figure{display:flex;flex-direction:column;align-items:center}
 .figure .logo{width:100%;max-width:26rem;height:auto;display:block}
 
 /* sections */
@@ -118,7 +118,7 @@ nav a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-decor
 .travel{margin-top:2.25rem;padding-top:1.75rem;border-top:1px solid var(--rule);max-width:44rem}
 .travel p{margin:0 0 .9rem}
 /* university logo on the home page. The file includes its own white background, as the OVGU design rules require */
-.host-logo{display:inline-block;margin-top:1.75rem;line-height:0}
-.host-logo img{width:15rem;max-width:100%;height:auto;mix-blend-mode:multiply;margin-left:-1.1rem}
-/* dark mode: keep the white background behind the logo */
-:root[data-theme="dark"] .host-logo img{mix-blend-mode:normal;margin-left:0;border-radius:6px}
+.host-logo{display:block;margin-top:2rem;line-height:0}
+.host-logo img{width:15rem;max-width:100%;height:auto;mix-blend-mode:multiply}
+/* dark mode: show the logo in negative (white on dark) */
+:root[data-theme="dark"] .host-logo img{filter:invert(1);mix-blend-mode:screen}
