@@ -6,7 +6,7 @@
   --orange:#e94e1b; --orange-text:#b8380e; --amber:#f39200; --moss:#2f7d5b;
   --orange-soft:#fde5dc; --amber-soft:#fdeccc; --moss-soft:#dcefe5;
   --faint:#cfc8c1;
-  --sky-soft:#dcebf8;
+  --sky-soft:#dcebf8; --gray-soft:#ebe8e5;
   --ovgu-panel:url(#ovgu-grad); --ovgu-text:#ffffff; --ovgu-disc:#ffffff;
   --f-display:"STIX Two Text", "STIX Two", Cambria, Georgia, serif;
   --f-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
@@ -15,7 +15,7 @@
 /* Dark colours, used when the visitor clicks the Dark mode button */
 :root[data-theme="dark"]{
   --ovgu-panel:url(#ovgu-grad); --ovgu-text:#f1ece6; --ovgu-disc:#f1ece6;
-  --sky-soft:#1c3247;
+  --sky-soft:#1c3247; --gray-soft:#2e2a27;
   --paper:#161412; --surface:#211e1b; --ink:#f1ece6; --muted:#a9a19a; --rule:#3a3430;
   --orange:#f2683a; --orange-text:#ff8a5c; --amber:#f7a733; --moss:#6fcf9f;
   --orange-soft:#3d2116; --amber-soft:#3a2a10; --moss-soft:#163628;
@@ -81,6 +81,7 @@ thead th{font-family:var(--f-display);font-weight:600;font-size:1rem;border-bott
 thead th small{display:block;font-family:var(--f-mono);font-weight:400;font-size:.72rem;color:var(--muted)}
 td.t{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
 .mc{font-weight:600}
+.talk{background:var(--gray-soft);color:var(--ink)}
 .poster{background:var(--sky-soft);color:var(--ink);font-weight:600}
 .mc1{background:var(--orange-soft);color:var(--ink)}
 .mc2{background:var(--amber-soft);color:var(--ink)}
