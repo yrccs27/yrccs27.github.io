@@ -63,6 +63,8 @@ section .wrap{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:1rem 2.
 h2{font-family:var(--f-display);font-weight:400;font-size:1.9rem;line-height:1.2;margin:0 0 1rem;text-wrap:balance}
 h3{font-family:var(--f-display);font-weight:600;font-size:1.2rem;margin:0 0 .35rem}
 .prose{max-width:40rem}
+section.fullwidth .wrap{grid-template-columns:minmax(0,1fr)}
+section.fullwidth .prose{max-width:none;text-align:justify}
 .prose p{margin:0 0 1rem}
 
 /* minicourses */

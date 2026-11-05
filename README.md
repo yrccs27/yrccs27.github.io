@@ -15,11 +15,10 @@ to move between pages. Keep all files in the same folder.
 
 | File | Page |
 |---|---|
-| `index.html` | Home / About |
+| `index.html` | Home: about the conference, speakers, registration |
 | `minicourses.html` | Minicourses |
 | `programme.html` | Programme (timetable and activities) |
 | `venue.html` | Venue, travel information, food options |
-| `registration.html` | Registration |
 | `style.css` | Colours, fonts and layout for all pages |
 | `theme.js` | Light / dark mode button |
 
