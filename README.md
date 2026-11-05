@@ -21,6 +21,7 @@ to move between pages. Keep all files in the same folder.
 | `venue.html` | Venue, travel information, food options |
 | `style.css` | Colours, fonts and layout for all pages |
 | `theme.js` | Light / dark mode button |
+| `favicon.svg` | Tab icon: the Combinatorial Synergies logo without lettering |
 
 ## How to edit
 
