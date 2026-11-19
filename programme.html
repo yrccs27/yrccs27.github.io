@@ -40,11 +40,9 @@
 <!-- EDIT: Programme table. Each <tr> is a half hour (9:00, 9:30, ...). Cells go Monday to Friday;
      rowspan="3" makes a cell last three half hours (90 minutes). Classes: "mc mc1/mc2/mc3" colour the minicourses,
      "quiet" is for breaks, "pending" for things not yet confirmed. -->
-<section id="programme">
+<section id="programme" class="fullwidth">
   <div class="wrap">
-    <div class="label">Schedule</div>
     <div>
-      <h2>Week at a glance</h2>
       <p class="prose">The conference opens with registration at 9:00 on Monday and ends with lunch on Friday. The week includes 11 contributed talks, poster sessions and an afternoon hike.</p>
       <div class="scroll" tabindex="0" aria-label="Schedule table, scrolls sideways on small screens">
         <table>
@@ -69,15 +67,15 @@
             <tr><td class="t">13:00</td></tr>
             <tr><td class="t">13:30</td><td rowspan="3">Q&amp;A</td><td class="talk">Talk 3</td><td rowspan="3">Activity 2</td><td class="talk">Talk 8</td><td rowspan="11"></td></tr>
             <tr><td class="t">14:00</td><td class="talk">Talk 4</td><td class="talk">Talk 9</td></tr>
-            <tr><td class="t">14:30</td><td class="quiet">Coffee</td><td class="quiet">Coffee</td></tr>
-            <tr><td class="t">15:00</td><td class="quiet">Coffee</td><td class="talk">Talk 5</td><td rowspan="5">Hike</td><td class="talk">Talk 10</td></tr>
+            <tr><td class="t">14:30</td><td class="talk">Talk 5</td><td class="talk">Talk 10</td></tr>
+            <tr><td class="t">15:00</td><td class="quiet">Coffee</td><td class="quiet">Coffee</td><td rowspan="5">Hike</td><td class="quiet">Coffee</td></tr>
             <tr><td class="t">15:30</td><td class="mc mc2" rowspan="3">Minicourse 2</td><td class="talk">Talk 6</td><td class="talk">Talk 11</td></tr>
             <tr><td class="t">16:00</td><td class="poster" rowspan="3">Poster session</td><td class="pending" rowspan="3">Poster session / talks (tbc)</td></tr>
             <tr><td class="t">16:30</td></tr>
             <tr><td class="t">17:00</td><td rowspan="4"></td></tr>
             <tr><td class="t">17:30</td><td rowspan="2"></td><td rowspan="3"></td><td rowspan="2"></td></tr>
             <tr><td class="t">18:00</td></tr>
-            <tr><td class="t">18:30</td><td class="pending">Social dinner</td><td class="pending">Barbecue (tbc)</td></tr>
+            <tr><td class="t">18:30</td><td class="pending">Social dinner</td><td class="pending">Picnic at park (tbc)</td></tr>
           </tbody>
         </table>
       </div>
@@ -87,9 +85,8 @@
 </section>
 
 <!-- EDIT: Activities. One <li> per activity. -->
-<section id="activities">
+<section id="activities" class="fullwidth">
   <div class="wrap">
-    <div class="label">Activities</div>
     <div>
       <h2>Beyond the research talks</h2>
       <p class="prose">One or two afternoon slots are set aside for activities beyond the research talks. Planned so far:</p>
