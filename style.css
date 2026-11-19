@@ -128,6 +128,8 @@ nav a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-decor
 .host-logo{display:block;width:100%;line-height:0;border-radius:4px}
 .host-logo:focus-visible{outline:2px solid var(--orange);outline-offset:4px}
 .host-logo .ovgu{width:27rem;max-width:100%;height:auto;display:block}
+/* the logo must stand on white: give it a white plate in dark mode */
+:root[data-theme="dark"] .host-logo .ovgu{background:#fff;border-radius:6px}
 .ovgu-dark{fill:var(--ovgu-panel)}
 .ovgu-light{fill:var(--ovgu-text)}
 .ovgu-disc{fill:var(--ovgu-disc)}
