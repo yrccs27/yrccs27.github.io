@@ -32,6 +32,10 @@ body{margin:0}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1.0625rem;line-height:1.6}
 a{color:var(--orange-text);text-underline-offset:3px}
 a:focus-visible{outline:2px solid var(--orange);outline-offset:2px;border-radius:2px}
+/* registration button */
+.btn{display:inline-block;background:#e94e1b;color:#fff;font-weight:600;text-decoration:none;padding:.6rem 1.4rem;border-radius:999px;margin:.25rem 0 .5rem}
+.btn:hover{background:#d24313}
+.btn:focus-visible{outline-offset:3px;border-radius:999px}
 .wrap{max-width:68rem;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
 
 /* top bar */
