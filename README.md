@@ -17,7 +17,7 @@ to move between pages. Keep all files in the same folder.
 |---|---|
 | `index.html` | Home: about the conference, speakers, registration |
 | `minicourses.html` | Minicourses |
-| `programme.html` | Programme (timetable and activities) |
+| `programme.html` | Schedule (timetable and activities) |
 | `venue.html` | Venue, travel information, food options |
 | `style.css` | Colours, fonts and layout for all pages |
 | `theme.js` | Light / dark mode button |
