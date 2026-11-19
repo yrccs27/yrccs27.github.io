@@ -78,8 +78,8 @@ section.fullwidth .prose{max-width:none;text-align:justify}
 .scroll{overflow-x:auto;margin-top:1.25rem;border:1px solid var(--rule);background:var(--surface)}
 table{border-collapse:collapse;width:100%;min-width:40rem;font-size:.92rem;table-layout:fixed}
 thead th:first-child{width:4.5rem}
-th,td{border-bottom:1px solid var(--rule);padding:.45rem .6rem;text-align:center;vertical-align:middle}
-thead th{font-family:var(--f-display);font-weight:600;font-size:1rem;border-bottom:2px solid var(--rule)}
+th,td{border-bottom:1px solid var(--rule);padding:.28rem .6rem;line-height:1.45;text-align:center;vertical-align:middle}
+thead th{font-family:var(--f-display);font-weight:600;font-size:1rem;padding-block:.4rem;border-bottom:2px solid var(--rule)}
 thead th small{display:block;font-family:var(--f-mono);font-weight:400;font-size:.72rem;color:var(--muted)}
 td.t{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
 .mc{font-weight:600}
